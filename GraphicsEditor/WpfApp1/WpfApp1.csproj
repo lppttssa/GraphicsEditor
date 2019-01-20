@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -62,6 +64,18 @@
     <Compile Include="Figures\Pencil.cs" />
     <Compile Include="Figures\Rectangle.cs" />
     <Compile Include="Figures\RoundedRectangle.cs" />
+    <Compile Include="Figures\SelectRectangle.cs" />
+    <Compile Include="Figures\ZoomRectangle.cs" />
+    <Compile Include="Helpers\BrushesToList.cs" />
+    <Compile Include="Helpers\BrushSelUserControl.xaml.cs">
+      <DependentUpon>BrushSelUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\LineStyle.cs" />
+    <Compile Include="Helpers\FigurePropertiesWindow.xaml.cs">
+      <DependentUpon>FigurePropertiesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="Helpers\XamlSerializationWrapper.cs" />
     <Compile Include="Painter.cs" />
     <Compile Include="Tools\EllipseTool.cs" />
     <Compile Include="Tools\HandTool.cs" />
@@ -69,7 +83,17 @@
     <Compile Include="Tools\PencilTool.cs" />
     <Compile Include="Tools\RectangleTool.cs" />
     <Compile Include="Tools\RoundedRectangleTool.cs" />
+    <Compile Include="Tools\SelectRectangleTool.cs" />
     <Compile Include="Tools\Tool.cs" />
+    <Compile Include="Tools\ZoomRectangleTool.cs" />
+    <Page Include="Helpers\BrushSelUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Helpers\FigurePropertiesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

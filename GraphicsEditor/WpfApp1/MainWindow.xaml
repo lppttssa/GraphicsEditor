@@ -6,27 +6,75 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" SizeChanged="Window_SizeChanged">
+    
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:MainWindow.CopyCommand}" Executed="MenuCopyClick"/>
+        <CommandBinding Command="{x:Static local:MainWindow.PasteCommand}" Executed="MenuPasteClick"/>
+        <CommandBinding Command="{x:Static local:MainWindow.IncreaseZOrderCommand}" Executed="MenuIncreaseZOrderClick"/>
+    </Window.CommandBindings>
+
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="395*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="67*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80*"/>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="352*"/>
         </Grid.RowDefinitions>
-        <ScrollViewer Name="MaScrollViewer" Grid.Row="1" Grid.RowSpan="3" VerticalScrollBarVisibility ="Auto" HorizontalScrollBarVisibility="Auto" CanContentScroll="False" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
-            <StackPanel HorizontalAlignment="Stretch">
-                <Canvas x:Name="MyCanvas" Background="White" MouseDown="Canvas_MouseDown" MouseUp="Canvas_MouseUp" MouseMove="Canvas_MouseMove" Margin="0" Width="7910" Height="3300" HorizontalAlignment="Stretch" RenderTransformOrigin="0.496,0.249"/>
-            </StackPanel>
+
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Новый" Click="MenuNewClick"></MenuItem>
+                <MenuItem Header="Открыть" Click="MenuOpenClick"/>
+                <MenuItem Header="Сохранить" Click="MenuSaveClick"/>
+                <MenuItem Header="Экспорт" >
+                    <MenuItem Header="Как *.png" Click="MenuExportAsPngClick"/>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Выход" Click="MenuExitClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Редактировать" >
+                <MenuItem Header="Копировать (Ctrl+C)" 
+                          InputGestureText="Ctrl+C"
+                          Click="MenuCopyClick"></MenuItem>
+                <MenuItem Header="Вставить (Ctrl+V)" 
+                          InputGestureText="Ctrl+V"
+                          Click="MenuPasteClick"></MenuItem>
+                <MenuItem Header="Увеличить Z-порядок (Ctrl+Q)" 
+                          InputGestureText="Ctrl+Q"
+                          Click="MenuIncreaseZOrderClick"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <ScrollViewer Name="MyScrollViewer" Grid.Row="2" 
+                      Grid.RowSpan="3" 
+                      VerticalScrollBarVisibility ="Auto" HorizontalScrollBarVisibility="Auto" 
+                      CanContentScroll="False" VerticalAlignment="Top">
+            
+                <Canvas x:Name="MyCanvas" Background="Bisque"
+                        MouseDown="Canvas_MouseDown" MouseUp="Canvas_MouseUp" MouseMove="Canvas_MouseMove" 
+                        Margin="0" 
+                        Width="7910" Height="3300" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top"
+                        RenderTransformOrigin="0,0"/>
+            
         </ScrollViewer>
-        <DockPanel x:Name="MyDockPanel" Height="67" VerticalAlignment="Top" Background="#FFC99A9A">
+        <DockPanel Grid.Row="1" x:Name="MyDockPanel" Height="67" VerticalAlignment="Top" Background="#FFC99A9A">
             <Button x:Name="btn1" Content="" Height="20" VerticalAlignment="Top" Width="20" DockPanel.Dock="Top"/>
             <Button x:Name="btn2" Content="" Height="20" VerticalAlignment="Bottom" Width="20" DockPanel.Dock="Bottom"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnZoomIn" Content="+" Click="BtnZoomInClick" Height="20"  Width="20" />
+                <Button x:Name="btnZoomOut" Content="-" Click="BtnZoomOutClick" Height="20"  Width="20" />
+            </StackPanel>
+           
         </DockPanel>
-        <DockPanel x:Name="DockPanelFill" HorizontalAlignment="Right" Height="20" VerticalAlignment="Top" Width="350"/>
-        <DockPanel x:Name="DockPanelLine"  HorizontalAlignment="Right" Height="20"  VerticalAlignment="Top" Width="350" Margin="423,47,0,0"/>
+        <DockPanel Grid.Row="1" x:Name="DockPanelFill" HorizontalAlignment="Right" Height="20" VerticalAlignment="Top" Width="350"/>
+        <DockPanel Grid.Row="1" x:Name="DockPanelLine"  HorizontalAlignment="Right" Height="20"  VerticalAlignment="Top" Width="350" Margin="423,47,0,0"/>
     </Grid>
 </Window>

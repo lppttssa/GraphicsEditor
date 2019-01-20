@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -8,8 +9,25 @@ using System.Windows.Media;
 
 namespace WpfApp1.Figures
 {
+    [DataContract]
     class Pencil : Figure
     {
+
+        public Pencil()
+        {
+
+        }
+
+        public override bool HasIntersection(Rect rect)
+        {
+            for (int i = 0; i < points.Count; i++)
+            {
+                if (rect.Contains(points[i]))
+                    return true;
+            }
+            return false;
+        }
+
         public Pencil(Point point) : base(point)
         {
             this.Fill = Painter.SelectedFill.Clone();

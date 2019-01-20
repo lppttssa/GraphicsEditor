@@ -1,0 +1,148 @@
+﻿<Window x:Class="WpfApp1.Helpers.FigurePropertiesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Helpers"
+        mc:Ignorable="d"
+        Title="Свойства фигур" 
+        Height="300" Width="400" 
+        MinWidth="380" MinHeight="280">
+
+    <Window.Resources>
+        <DataTemplate x:Key="LineWidth">
+            <StackPanel Height="20">
+                <Line X1="5" Y1="10" X2="190" Y2="10" 
+                      Stroke="Blue" 
+                      StrokeThickness="{Binding StrokeThickness}" 
+                       />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="LineStyle">
+            <StackPanel Height="20">
+                <Line X1="5" Y1="10" X2="190" Y2="10" Stroke="Blue" 
+                      StrokeDashArray="{Binding StrokeDashArray}"
+                      />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    
+    <Grid Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="100"/>
+            <ColumnDefinition Width="Auto" MinWidth="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0" 
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+            Background="Bisque" BorderBrush="Gray" BorderThickness="2" CornerRadius="3">
+            <WrapPanel Margin="2" Name="panel"  >
+            
+            </WrapPanel>
+        </Border>
+
+        <Label Grid.Column="0" Grid.Row="2" Margin="2" VerticalAlignment="Center">
+            Цвет заливки
+        </Label>
+        <local:BrushSelUserControl Grid.Column="1" Grid.Row="2" 
+                                   x:Name="brushFill" 
+                                   Margin="2"
+                                   VerticalAlignment="Center" SelectedIndex="1"/>
+
+        <Label Grid.Column="0" Grid.Row="3" 
+               Margin="2" VerticalAlignment="Center">
+            Цвет линии
+        </Label>
+        <local:BrushSelUserControl Grid.Column="1" Grid.Row="3" 
+                                   x:Name="brushStroke" 
+                                   Margin="2"
+                                   VerticalAlignment="Center" SelectedIndex="1"/>
+
+        <Label Grid.Column="0" Grid.Row="4" 
+               Margin="2" VerticalAlignment="Center">
+            Толщина линии
+        </Label>
+        <ComboBox Name="comboLinesWidth"
+                  Margin="2"
+                  Grid.Column="1" Grid.Row="4" 
+                  Width="200" Height="30" 
+                  ItemTemplate="{StaticResource LineWidth}" />
+
+        <Label Grid.Column="0" Grid.Row="5" 
+               Margin="2" VerticalAlignment="Center">
+            Тип линии
+        </Label>
+        <ComboBox Name="comboLinesStyle"
+                  Margin="2"
+                  Grid.Column="1" Grid.Row="5" 
+                  Width="200" Height="30" 
+                  ItemTemplate="{StaticResource LineStyle}" />
+
+        <Label Grid.Column="0" Grid.Row="6" 
+               Name="labelRadiusX"
+               Margin="2" VerticalAlignment="Center">
+            RadiusX скругления
+        </Label>
+        <Grid Grid.Column="1" Grid.Row="6" 
+              HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Slider Name="sliderRadiusX"
+                    Grid.Column="0"
+                    Margin="2" 
+                    VerticalAlignment="Center"
+                    Minimum="0"
+                    Maximum="50"/>
+            <TextBlock Width="20" 
+                       VerticalAlignment="Center"
+                       Grid.Column="1"
+                       Text="{Binding ElementName=sliderRadiusX, Path=Value, StringFormat={}{0:F0}}"/>
+        </Grid>
+        
+        
+        <Label Grid.Column="0" Grid.Row="7"
+               Name="labelRadiusY"
+               Margin="2" 
+               VerticalAlignment="Center">
+            RadiusY скругления
+        </Label>
+        <Grid Grid.Column="1" Grid.Row="7" 
+              HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Slider Name="sliderRadiusY"
+                    Grid.Column="0"
+                    Margin="2" 
+                    VerticalAlignment="Center"
+                    Minimum="0"
+                    Maximum="50"/>
+            <TextBlock Width="20" 
+                       VerticalAlignment="Center"
+                       Grid.Column="1"
+                       Text="{Binding ElementName=sliderRadiusY, Path=Value, StringFormat={}{0:F0}}"/>
+        </Grid>
+
+        <Button Grid.Row="8" Grid.Column="1" 
+                Click="BtnApplyClick"
+                Width="70">
+            Применить
+        </Button>
+    </Grid>
+</Window>

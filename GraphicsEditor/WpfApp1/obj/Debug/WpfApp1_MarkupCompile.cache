@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor\WpfApp1\obj\Debug\
+C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor\WpfApp1\App.xaml
-11151548125
+C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\App.xaml
+3347752287
 
-20-1118954695
-131569487696
-MainWindow.xaml;
+30-1462516416
+15833945659
+Helpers\BrushSelUserControl.xaml;Helpers\FigurePropertiesWindow.xaml;MainWindow.xaml;
 
 False
 
