@@ -18,43 +18,43 @@ C:\Users\Настенька\Desktop\Htl\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfA
 C:\Users\Настенька\Desktop\Htl\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\Настенька\Desktop\Htl\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\Настенька\Desktop\Htl\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.pdb
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\bin\Debug\WpfApp1.exe.config
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\bin\Debug\WpfApp1.exe
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\bin\Debug\WpfApp1.pdb
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.g.cs
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.g.cs
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\MainWindow.g.cs
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\App.g.cs
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.baml
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.baml
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\MainWindow.baml
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.g.resources
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.exe
-C:\Users\Настенька\Desktop\WpfGraphicsEditor\WpfApp1\obj\Debug\WpfApp1.pdb
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\bin\Debug\WpfApp1.exe.config
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\bin\Debug\WpfApp1.exe
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\bin\Debug\WpfApp1.pdb
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.g.cs
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.g.cs
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\MainWindow.g.cs
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\App.g.cs
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.baml
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.baml
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\MainWindow.baml
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1.g.resources
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1.exe
-C:\Users\Настенька\Desktop\Новая папка\GraphicsEditor2.5\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.g.cs
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.g.cs
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.baml
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.baml
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Настенька\Desktop\Htl\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.g.cs
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.g.cs
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\Helpers\BrushSelUserControl.baml
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\Helpers\FigurePropertiesWindow.baml
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Настенька\Desktop\GraphicsEditor3\WpfApp1\obj\Debug\WpfApp1.pdb

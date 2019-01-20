@@ -34,20 +34,17 @@ namespace WpfApp1.Helpers
                 {
                     dcs.WriteObject(xs, cts);
                 }
-                return sb.ToString().Replace("\r\n", " ");
+                return sb.ToString();
             }
         }
 
         private static Func<object, object> MakeCastDelegate(Type from, Type to)
         {
             var p = Expression.Parameter(typeof(object)); 
-            return Expression.Lambda<Func<object, object>>(
-                Expression.Convert(Expression.ConvertChecked(Expression.Convert(p, from), to), typeof(object)),
-                p).Compile();
+            return Expression.Lambda<Func<object, object>>(Expression.Convert(Expression.ConvertChecked(Expression.Convert(p, from), to), typeof(object)),p).Compile();
         }
 
-        private static readonly Dictionary<Tuple<Type, Type>, Func<object, object>> CastCache
-        = new Dictionary<Tuple<Type, Type>, Func<object, object>>();
+        private static readonly Dictionary<Tuple<Type, Type>, Func<object, object>> CastCache = new Dictionary<Tuple<Type, Type>, Func<object, object>>();
 
         private static Func<object, object> GetCastDelegate(Type from, Type to)
         {

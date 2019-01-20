@@ -15,19 +15,13 @@
 
     <Grid>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="395*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="80*"/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="352*"/>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="67"></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-
-        <Menu Height="25" VerticalAlignment="Top">
+        
+        <Menu Grid.Row="0">
             <MenuItem Header="Файл">
                 <MenuItem Header="Новый" Click="MenuNewClick"></MenuItem>
                 <MenuItem Header="Открыть" Click="MenuOpenClick"/>
@@ -51,30 +45,55 @@
             </MenuItem>
         </Menu>
 
-        <ScrollViewer Name="MyScrollViewer" Grid.Row="2" 
-                      Grid.RowSpan="3" 
-                      VerticalScrollBarVisibility ="Auto" HorizontalScrollBarVisibility="Auto" 
-                      CanContentScroll="False" VerticalAlignment="Top">
-            
-                <Canvas x:Name="MyCanvas" Background="Bisque"
+
+
+        <ScrollViewer Name="MyScrollViewer"  Width="Auto" Height="Auto"  Grid.Row="2"
+                      VerticalScrollBarVisibility="Visible"  HorizontalScrollBarVisibility="Visible" 
+                      CanContentScroll="False">
+            <Canvas x:Name="MyCanvas" Background="Bisque"  Width="Auto" Height="Auto"
                         MouseDown="Canvas_MouseDown" MouseUp="Canvas_MouseUp" MouseMove="Canvas_MouseMove" 
-                        Margin="0" 
-                        Width="7910" Height="3300" 
-                        HorizontalAlignment="Left" 
-                        VerticalAlignment="Top"
-                        RenderTransformOrigin="0,0"/>
-            
+                        RenderTransformOrigin="0,0">
+                <Image Name="imgMain" SizeChanged="imgMain_SizeChanged"></Image>
+            </Canvas>
         </ScrollViewer>
-        <DockPanel Grid.Row="1" x:Name="MyDockPanel" Height="67" VerticalAlignment="Top" Background="#FFC99A9A">
-            <Button x:Name="btn1" Content="" Height="20" VerticalAlignment="Top" Width="20" DockPanel.Dock="Top"/>
-            <Button x:Name="btn2" Content="" Height="20" VerticalAlignment="Bottom" Width="20" DockPanel.Dock="Bottom"/>
-            <StackPanel Orientation="Horizontal">
-                <Button x:Name="btnZoomIn" Content="+" Click="BtnZoomInClick" Height="20"  Width="20" />
-                <Button x:Name="btnZoomOut" Content="-" Click="BtnZoomOutClick" Height="20"  Width="20" />
-            </StackPanel>
+
+        <Grid Grid.Row="1" Background="#FFC99A9A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            
+            <DockPanel Grid.Column="0" x:Name="MyDockPanel" Height="67" >
+                
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnZoomIn" Content="+" Click="BtnZoomInClick" Height="20"  Width="20" />
+                    <Button x:Name="btnZoomOut" Content="-" Click="BtnZoomOutClick" Height="20"  Width="20" />
+                </StackPanel>
+
+            </DockPanel>
+
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" x:Name="btn1" Content="" Height="20"  Width="20" />
+                <Button Grid.Row="1" Grid.Column="0" x:Name="btn2" Content="" Height="20"  Width="20" />
+
+                <StackPanel Grid.Row="0" Grid.Column="1" x:Name="DockPanelFill" Orientation="Horizontal" Height="20" Width="Auto" HorizontalAlignment="Center"/>
+                <StackPanel Grid.Row="1" Grid.Column="1" x:Name="DockPanelLine" Orientation="Horizontal" Height="20" Width="Auto" HorizontalAlignment="Center"/>
+            </Grid>
+
            
-        </DockPanel>
-        <DockPanel Grid.Row="1" x:Name="DockPanelFill" HorizontalAlignment="Right" Height="20" VerticalAlignment="Top" Width="350"/>
-        <DockPanel Grid.Row="1" x:Name="DockPanelLine"  HorizontalAlignment="Right" Height="20"  VerticalAlignment="Top" Width="350" Margin="423,47,0,0"/>
+        </Grid>
+        
+       
     </Grid>
 </Window>

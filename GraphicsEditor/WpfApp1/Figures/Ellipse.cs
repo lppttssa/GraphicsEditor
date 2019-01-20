@@ -42,14 +42,13 @@ namespace WpfApp1.Figures
         {
             this.Fill = Painter.SelectedFill.Clone();
             this.Line = Painter.SelectedLine.Clone();
-            Name = "ellipse_#" + Name;
+            Name = "Ellipse_# " + Name;
         }
 
         public override void Draw(DrawingContext drawingContext)
         {
             Vector point0 = Point.Subtract(points[1], points[0])/2;
-            drawingContext.DrawEllipse(this.Fill, this.Line, 
-                Point.Add(points[0], point0), point0.X, point0.Y);
+            drawingContext.DrawEllipse(this.Fill, this.Line, Point.Add(points[0], point0), point0.X, point0.Y);
         }
 
         public override void AddPoint(Point point)

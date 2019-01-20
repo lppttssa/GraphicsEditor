@@ -73,7 +73,7 @@ namespace WpfApp1
             MainCanvas.Height *= factor;
         }
 
-        public static void Zoom(float factor, Point point)
+        public static void Zoom(float factor, Point point) //Зум с коэффициентом
         {
             if (factor == 0 || float.IsInfinity(factor)) return;
             Matrix m = new Matrix();
@@ -117,9 +117,8 @@ namespace WpfApp1
         internal static MemoryStream SaveCanvasAsStream()
         {
             Rect rect = new Rect(MainCanvas.RenderSize);
-            RenderTargetBitmap rtb = new RenderTargetBitmap((int)rect.Right,
-              (int)rect.Bottom, 96d, 96d, System.Windows.Media.PixelFormats.Default);
-            rtb.Render(MainCanvas);
+            RenderTargetBitmap rtb = new RenderTargetBitmap((int)rect.Right, (int)rect.Bottom, 96d, 96d, System.Windows.Media.PixelFormats.Default);
+rtb.Render(MainCanvas);
 
             BitmapEncoder pngEncoder = new PngBitmapEncoder();
             pngEncoder.Frames.Add(BitmapFrame.Create(rtb));
@@ -147,7 +146,7 @@ namespace WpfApp1
             return ms;
         }
 
-        internal static void OpenFiguresFromBytes(byte[] bytes)  //открыть сохраненную картинку
+        internal static void OpenFiguresFromBytes(byte[] bytes)  //открыть сохраненные фигуры
         {
             var figures = new List<Figure>();
             var ms = new MemoryStream(bytes);
@@ -177,8 +176,7 @@ namespace WpfApp1
             {
                 for (int i = 0; i < fig.points.Count; i++)
                 {
-                    fig.points[i] = new Point(fig.points[i].X+deltaX, 
-                                              fig.points[i].Y+deltaY);
+                    fig.points[i] = new Point(fig.points[i].X+deltaX,  fig.points[i].Y+deltaY);
                 }
                 Figures.Add(fig);
             }

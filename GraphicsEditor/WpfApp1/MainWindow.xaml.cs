@@ -125,11 +125,6 @@ namespace WpfApp1
                 DockPanelLine.Children.Add(newButton);
 
             }
-
-            wndProp = new FigurePropertiesWindow();
-            wndProp.Closed += wndProp_Closed;
-
-            wndProp.Show();
         }
 
         private void MainWindow_Closed(object sender, EventArgs e)
@@ -217,8 +212,8 @@ namespace WpfApp1
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             //canvas.Width = Window.width  //размер холста изменяется вместе с изменением размера окна
-            MyCanvas.Width = this.Width;
-            MyCanvas.Height = this.Height;
+            MyCanvas.Width = e.NewSize.Width;
+            MyCanvas.Height = e.NewSize.Height;
         }
 
         private void BtnZoomInClick(object sender, RoutedEventArgs e) //Zoom c кнопки
@@ -357,6 +352,12 @@ namespace WpfApp1
         {
             wndProp?.Close();
             this.Close();
+        }
+
+        private void imgMain_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            MyCanvas.Height = e.NewSize.Height;
+            MyCanvas.Width = e.NewSize.Width;
         }
     }
 }
