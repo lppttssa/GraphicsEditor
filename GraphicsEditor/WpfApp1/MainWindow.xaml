@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="395*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="352*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Name="MaScrollViewer" Grid.Row="1" Grid.RowSpan="3" VerticalScrollBarVisibility ="Auto" HorizontalScrollBarVisibility="Auto" CanContentScroll="False" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+            <StackPanel HorizontalAlignment="Stretch">
+                <Canvas x:Name="MyCanvas" Background="White" MouseDown="Canvas_MouseDown" MouseUp="Canvas_MouseUp" MouseMove="Canvas_MouseMove" Margin="0" Width="7910" Height="3300" HorizontalAlignment="Stretch" RenderTransformOrigin="0.496,0.249"/>
+            </StackPanel>
+        </ScrollViewer>
+        <DockPanel x:Name="MyDockPanel" Height="67" VerticalAlignment="Top" Background="#FFC99A9A" />
+        <DockPanel x:Name="DockPanelFill" HorizontalAlignment="Right" Height="20" VerticalAlignment="Top" Width="350"/>
+        <DockPanel x:Name="DockPanelLine"  HorizontalAlignment="Right" Height="20"  VerticalAlignment="Top" Width="350" Margin="423,47,0,0"/>
+    </Grid>
+</Window>
