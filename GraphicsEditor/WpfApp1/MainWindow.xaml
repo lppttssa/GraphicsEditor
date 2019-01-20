@@ -22,7 +22,10 @@
                 <Canvas x:Name="MyCanvas" Background="White" MouseDown="Canvas_MouseDown" MouseUp="Canvas_MouseUp" MouseMove="Canvas_MouseMove" Margin="0" Width="7910" Height="3300" HorizontalAlignment="Stretch" RenderTransformOrigin="0.496,0.249"/>
             </StackPanel>
         </ScrollViewer>
-        <DockPanel x:Name="MyDockPanel" Height="67" VerticalAlignment="Top" Background="#FFC99A9A" />
+        <DockPanel x:Name="MyDockPanel" Height="67" VerticalAlignment="Top" Background="#FFC99A9A">
+            <Button x:Name="btn1" Content="" Height="20" VerticalAlignment="Top" Width="20" DockPanel.Dock="Top"/>
+            <Button x:Name="btn2" Content="" Height="20" VerticalAlignment="Bottom" Width="20" DockPanel.Dock="Bottom"/>
+        </DockPanel>
         <DockPanel x:Name="DockPanelFill" HorizontalAlignment="Right" Height="20" VerticalAlignment="Top" Width="350"/>
         <DockPanel x:Name="DockPanelLine"  HorizontalAlignment="Right" Height="20"  VerticalAlignment="Top" Width="350" Margin="423,47,0,0"/>
     </Grid>

@@ -133,16 +133,20 @@ namespace WpfApp1
         private void ButtonFill_Click(object sender, RoutedEventArgs e)
         {
             Painter.SelectedFill = (sender as Button).Tag as Brush;
+            btn1.Background = Painter.SelectedFill;
         }
 
         private void ButtonLine_Click(object sender, RoutedEventArgs e)
         {
             Painter.SelectedLine = new Pen ((sender as Button).Background, 2.0);
+            btn2.Background = (sender as Button).Background;
         }
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             //canvas.Width = Window.width  //размер холста изменяется вместе с изменением размера окна
+            MyCanvas.Width = this.Width;
+            MyCanvas.Height = this.Height;
         }
         /* private void Button_Click(object sender, RoutedEventArgs e)
 {
